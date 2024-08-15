@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import { signOut } from 'https://www.gstatic.com/firebasejs/10.12.5/firebase-auth.js';
 import { ref, onValue, set } from 'https://www.gstatic.com/firebasejs/10.12.5/firebase-database.js';
-import { auth, database } from './firebaseConfig';
+import { auth, database } from '/TextboX/FireBaseConfig/firebaseConfig.js';
 
 
 function Inbox() {
