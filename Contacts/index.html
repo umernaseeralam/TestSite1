@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Contacts
+        </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+       <div class="FullGrid">
+            <div class="BlackSidebar" ></div>
+            <div class="SideMenu">
+                <button class="HamMenuBtn" >
+                    <img class="HamMenuImg" src="Images/HamburgermenuIcon.svg" alt="Open Menu">
+                </button>
+                <div class="MenuItem">
+                    <a href="../Page 2/index.html"><button class="MenuOption" >
+                        <img class="MenuIcon" src="Images/ChatIcon.svg" alt="Inbox">
+                    <p  class="PStyling">
+                        Inbox
+                    </p>
+                    </button></a>
+                    
+                    <button class="MenuOption" >
+                        <img class="MenuIcon" src="Images/ContactIcon.svg" alt="Inbox">
+                    <p  class="PStyling" >
+                        Contacts
+                    </p>
+                    </button>
+                    <button class="MenuOption" >
+                        <img class="MenuIcon" src="Images/SettingIcon.svg" alt="Inbox">
+                    <p  class="PStyling" >
+                        Settings
+                    </p>
+                    </button>
+                    <img class="Logo" src="Images/TalkboXLogo.svg" alt="">
+                </div>
+            </div>
+            <div class="TopHeaderHolder">
+                <div class="InputHolder">
+                    <input placeholder="Search"  class="SearchInput"type="text"><button class="SearchBtn" ></button> 
+                    <div class="ImgHolder" >
+                        <img class="IconImg" src="Images/NotificationsIcons.svg" alt="Notifications"><p class="NotificationText" >Notifications</p>
+                    </div>
+                    <div class="ProfileHolder">
+                        <img class="IconProfile" src="Images/ProfileIcon.svg" alt="You">
+                        <p class="ProfileName">Franklin Jr.</p>
+                        <div class="DropdownIcon"></div>
+                        <input type="checkbox" id="toggleProfileDropdown" class="toggleProfileDropdown">
+                        <label for="toggleProfileDropdown" class="ProfileDropdownLabel"></label>
+                        <div class="ProfileDropdown">
+                            <ul>
+                                <li><a href="#">Favorites</a></li>
+                                <li><label for="editProfileToggle">Edit Profile</label></li>
+                                <li><a href="../index.html">Log Out</a></li>
+                            </ul>
+                        </div>
+                        <input type="checkbox" id="editProfileToggle" class="hidden-checkbox">
+                        <div class="popup-overlay">
+                            <div class="popup-content">
+                                <label for="editProfileToggle" class="close-popup">&larr;</label>
+                                <h2 class="EditProfileText" >Edit Profile</h2>
+                                <div class="profile-icon">
+                                    <span class="icon"><img src="Images/ProfileIcon.svg" alt="You"></span>
+                                </div>
+                                <p>Share a little about yourself!</p>
+                                <form>
+                                    <div class="input-group">
+                                        <label for="fullName">Full Name</label>
+                                        <input type="text" id="fullName" name="fullName" placeholder="Franklin Jr.">
+                                    </div>
+                                    <div class="input-group">
+                                        <label for="email">Email</label>
+                                        <input type="email" id="email" name="email" placeholder="Franklin123@gmail.com">
+                                    </div>
+                                    <div class="input-group">
+                                        <label for="mobileNumber">Mobile Number</label>
+                                        <input type="tel" id="mobileNumber" name="mobileNumber" placeholder="+92 12345678">
+                                    </div>
+                                    <button type="submit" class="update-btn">Update</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ContactSearchHolder" >
+                    <h1 class="ContactText" >Contacts</h1>
+                     <input placeholder="Search" class="ContactSearch" type="text"><button class="ContactSearchBtn" >Search</button>
+                     <label for="newContactToggle" class="AddBtn">+ New Contact</label>
+                     <input type="checkbox" id="newContactToggle" class="hidden-checkbox">
+<div class="popup-overlay">
+    <div class="popup-content">
+        <label for="newContactToggle" class="close-popup">&times;</label>
+        <h2>New Contact</h2>
+        <form>
+            <div class="input-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" required>
+            </div>
+            <div class="input-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" required>
+            </div>
+            <div class="input-group">
+                <label for="phoneNumber">Phone Number</label>
+                <input type="tel" id="phoneNumber" name="phoneNumber" required>
+            </div>
+            <button type="submit" class="save-btn">Save Contact</button>
+        </form>
+    </div>
+</div>
+                     <!-- <input type="checkbox" id="editProfileToggle" class="hidden-checkbox">
+                        <div class="popup-overlay">
+                            <div class="popup-content">
+                                <label for="editProfileToggle" class="close-popup">&larr;</label>
+                                <h2 class="EditProfileText" >Edit Profile</h2>
+                                <div class="profile-icon">
+                                    <span class="icon"><img src="Images/ProfileIcon.svg" alt="You"></span>
+                                </div>
+                                <p>Share a little about yourself!</p>
+                                <form>
+                                    <div class="input-group">
+                                        <label for="fullName">Full Name</label>
+                                        <input type="text" id="fullName" name="fullName" placeholder="Franklin Jr.">
+                                    </div>
+                                    <div class="input-group">
+                                        <label for="email">Email</label>
+                                        <input type="email" id="email" name="email" placeholder="Franklin123@gmail.com">
+                                    </div>
+                                    <div class="input-group">
+                                        <label for="mobileNumber">Mobile Number</label>
+                                        <input type="tel" id="mobileNumber" name="mobileNumber" placeholder="+92 12345678">
+                                    </div>
+                                    <button type="submit" class="update-btn">Update</button>
+                                </form>
+                            </div>
+                        </div>-->
+                </div>
+                <div class="ContactGrid">
+                    <div class="Contact">
+                        <div class="ContactProfile">
+                            <img class="ContactProfileImg" src="Images/ProfileIcon.svg" alt="Contact">
+                            <h1>Name</h1>
+                        </div>
+                        <div class="ContactInfo" >
+                            <p>Number: 123456789</p>
+                            <p>Gmail:Me@Gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="Contact">
+                        <div class="ContactProfile">
+                            <img class="ContactProfileImg" src="Images/ProfileIcon.svg" alt="Contact">
+                            <h1>Name</h1>
+                        </div>
+                        <div class="ContactInfo" >
+                            <p>Number: 123456789</p>
+                            <p>Gmail:Me@Gmail.com</p>
+                        </div>
+                    </div> <div class="Contact">
+                        <div class="ContactProfile">
+                            <img class="ContactProfileImg" src="Images/ProfileIcon.svg" alt="Contact">
+                            <h1>Name</h1>
+                        </div>
+                        <div class="ContactInfo" >
+                            <p>Number: 123456789</p>
+                            <p>Gmail:Me@Gmail.com</p>
+                        </div>
+                    </div> <div class="Contact">
+                        <div class="ContactProfile">
+                            <img class="ContactProfileImg" src="Images/ProfileIcon.svg" alt="Contact">
+                            <h1>Name</h1>
+                        </div>
+                        <div class="ContactInfo" >
+                            <p>Number: 123456789</p>
+                            <p>Gmail:Me@Gmail.com</p>
+                        </div>
+                    </div> <div class="Contact">
+                        <div class="ContactProfile">
+                            <img class="ContactProfileImg" src="Images/ProfileIcon.svg" alt="Contact">
+                            <h1>Name</h1>
+                        </div>
+                        <div class="ContactInfo" >
+                            <p>Number: 123456789</p>
+                            <p>Gmail:Me@Gmail.com</p>
+                        </div>
+                    </div> <div class="Contact">
+                        <div class="ContactProfile">
+                            <img class="ContactProfileImg" src="Images/ProfileIcon.svg" alt="Contact">
+                            <h1>Name</h1>
+                        </div>
+                        <div class="ContactInfo" >
+                            <p>Number: 123456789</p>
+                            <p>Gmail:Me@Gmail.com</p>
+                        </div>
+                    </div> <div class="Contact">
+                        <div class="ContactProfile">
+                            <img class="ContactProfileImg" src="Images/ProfileIcon.svg" alt="Contact">
+                            <h1>Name</h1>
+                        </div>
+                        <div class="ContactInfo" >
+                            <p>Number: 123456789</p>
+                            <p>Gmail:Me@Gmail.com</p>
+                        </div>
+                    </div> <div class="Contact">
+                        <div class="ContactProfile">
+                            <img class="ContactProfileImg" src="Images/ProfileIcon.svg" alt="Contact">
+                            <h1>Name</h1>
+                        </div>
+                        <div class="ContactInfo" >
+                            <p>Number: 123456789</p>
+                            <p>Gmail:Me@Gmail.com</p>
+                        </div>
+                    </div> <div class="Contact">
+                        <div class="ContactProfile">
+                            <img class="ContactProfileImg" src="Images/ProfileIcon.svg" alt="Contact">
+                            <h1>Name</h1>
+                        </div>
+                        <div class="ContactInfo" >
+                            <p>Number: 123456789</p>
+                            <p>Gmail:Me@Gmail.com</p>
+                        </div>
+                    </div> <div class="Contact">
+                        <div class="ContactProfile">
+                            <img class="ContactProfileImg" src="Images/ProfileIcon.svg" alt="Contact">
+                            <h1>Name</h1>
+                        </div>
+                        <div class="ContactInfo" >
+                            <p>Number: 123456789</p>
+                            <p>Gmail:Me@Gmail.com</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

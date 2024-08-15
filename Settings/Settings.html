@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Settings</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <div class="TopHeaderHolder">
+            <div class="InputHolder">
+                <div class="ProfileHolder">
+                    <img class="IconProfile" src="Images/ProfileIcon.svg" alt="You">
+                    <p class="ProfileName">Franklin Jr.</p>
+                    <div class="DropdownIcon"></div>
+                    <input type="checkbox" id="toggleProfileDropdown" class="toggleProfileDropdown">
+                    <label for="toggleProfileDropdown" class="ProfileDropdownLabel"></label>
+                    <div class="ProfileDropdown">
+                        <ul>
+                            <li><a href="#">Favorites</a></li>
+                            <li><label for="editProfileToggle">Edit Profile</label></li>
+                            <li><a href="../index.html">Log Out</a></li>
+                        </ul>
+                    </div>
+                    <input type="checkbox" id="editProfileToggle" class="hidden-checkbox">
+                    <div class="popup-overlay">
+                        <div class="popup-content">
+                            <label for="editProfileToggle" class="close-popup">&larr;</label>
+                            <h2 class="EditProfileText">Edit Profile</h2>
+                            <div class="profile-icon">
+                                <span class="icon"><img src="Images/ProfileIcon.svg" alt="You"></span>
+                            </div>
+                            <form>
+                                <div class="input-group">
+                                    <label for="fullName">Full Name</label>
+                                    <input type="text" id="fullName" name="fullName" placeholder="Franklin Jr.">
+                                </div>
+                                <div class="input-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" placeholder="Franklin123@gmail.com">
+                                </div>
+                                <div class="input-group">
+                                    <label for="mobileNumber">Mobile Number</label>
+                                    <input type="tel" id="mobileNumber" name="mobileNumber" placeholder="+92 12345678">
+                                </div>
+                                <button type="submit" class="update-btn">Update</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="ImgHolder">
+                    <img class="IconImg" src="Images/NotificationsIcons.svg" alt="Notifications">
+                    <p class="NotificationText">Notifications</p>
+                </div>
+            </div>
+            <hr class="brk-line">
+        <div class="FullGrid">
+            <div class="BlackSidebar"></div>
+            <div class="SideMenu">
+                <p class="Mainmenue">Main Menu</p>
+                <div class="MenuItem">
+                    <button class="MenuOption">
+                        <img class="MenuIcon" src="Images/ChatIcon.svg" alt="Inbox">
+                        
+                        <a class="Link-text" href="../Page 2/index.html"><p class="PStyling">Inbox</p></a>
+                    </button>
+                   
+                    <button class="MenuOption" onclick="openpopUp()">
+                        <img class="MenuIcon Add-icon" src="Images/AddIcon.svg" alt="Inbox">
+                    <p  class="PStyling" >
+                        Add New Chat
+                    </p>
+                    </button>
+                    <button class="MenuOption">
+                        <img class="MenuIcon" src="Images/SettingIcon.svg" alt="Settings">
+                        <p class="PStyling">Settings</p>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="SettingsSection">
+                <h1 class="SettingsText">Settings</h1>
+                <div class="SettingsGroup">
+                    
+                    <div class="input-group inline-group">
+                        <label for="notifications">Notifications</label>
+                        <input type="checkbox" id="notifications" name="notifications" checked>
+                    </div>
+                    <div class="input-group inline-group">
+                        <label for="notifications">Read Receipts</label>
+                        <input type="checkbox" id="notifications" name="notifications" checked>
+                    </div>
+
+                    <div class="input-group inline-group">
+                        <label for="notifications">Version Number</label>
+                        <p>1.0.0</p>
+                    </div>
+                    <div class="input-group inline-group">
+                        <label for="notifications">Privacy Policy</label>
+                        <p>Read...</p>
+                    </div>
+                    <div class="input-group inline-group">
+                        <label for="notifications">Language</label>
+                        <p>English</p>
+                    </div>
+                    <a class="Link-text" href="../Page 2/index.html"><button type="submit" class="save-settings-btn">Save Settings</button></a>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="PopUp.js"></script>
+</html>

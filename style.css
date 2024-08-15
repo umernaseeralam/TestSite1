@@ -1,0 +1,259 @@
+*{
+    font-family: sans-serif;
+}
+body{
+    background-image: url(Images/Background.svg);
+}
+.BackgroundHolder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.LogoHolder{
+   position: fixed;
+   right: 0;
+   margin-right: 50px;
+   display: grid;
+   grid-template-columns: 1fr;
+}
+.Logo{
+    width: 200px;
+    height: 100px;
+}
+.PromptHolder{
+    margin-top: 80px;
+    margin-left: 500px;
+    margin-right: 25px;
+}
+.Prompt{
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+    color: #4A4543;
+}
+.LoginScreenHolder{
+    border: 1px solid #C4C4C4;
+    box-shadow: 10px 10px 5px #aaaaaa;
+    width: 40%;
+    height: 590px;
+    border-bottom-right-radius:40% ;
+    background-color: white;
+}
+.WelcomeText{
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+}
+.DetailsText{
+    color: #808080;
+    display: flex;
+    justify-content: center;
+}
+.EmailInputHolder{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.EmailText{
+    margin-left: 90px;
+    font-weight: 500;
+    font-size: 14px;
+}
+.PasswordText{
+    margin-left: 90px;
+    font-weight: 500;
+    font-size: 14px; 
+}
+.InputStyle{
+    margin-left: 90px;
+    width: 60%;
+    padding:12px;
+    border: 1px solid #DADADA;
+}
+.PasswordOptionsHolder{
+display: grid;
+grid-template-columns: 1fr 1fr;
+margin-top: 20px;
+margin-bottom: 20px;
+}
+.RememberText{
+    text-align: left;
+    display: inline-block;
+    margin: 0px;
+    margin-left: 5px;
+}
+.RememberHolder{
+    margin-left: 90px;
+}
+.ForgotPasswordText{
+    display: flex;
+    justify-content: left;
+    margin-left: 50px;
+    text-decoration: none;
+    color:#FE8660 ;
+}
+.RememberBtn{
+    border: 1px solid;
+    height: 18px;
+    width: 18px;
+    background-color: transparent;
+}
+.Contactstxt{
+    text-decoration: none;
+}
+.SigninBtn{
+    display: block;
+    margin-left: 20%;
+    padding: 12px ;
+    width: 65%;
+    background: linear-gradient(to right, #FFBD66, #FF7A7A);
+    color: white;
+    border: none;
+    border-radius: 6px;
+}
+.SigninBtn:hover{
+    opacity: 0.8;
+}
+.Page2Anchor{
+    width: 100px;
+    text-decoration: none;
+    color: white;
+}
+.GoogleSigninBtn{
+    display: block;
+    margin-left: 20%;
+    margin-top: 2%;
+    padding: 12px ;
+    width: 65%;
+    border: 1px solid #DADADA;
+    border-radius: 6px;
+}
+.GoogleSigninBtn:hover{
+    background-color:bisque;
+    
+}
+.signupbtn{
+    text-decoration: none;
+    color:#FE8660;
+}
+.SignupText{
+    display: flex;
+    justify-content: center;
+}
+.LeftSpace{
+    margin-left: 15px;
+}
+.Sign-upLink{
+    color:#FE8660 ;
+}
+
+/* Media Queries */
+
+/* For screens smaller than 1200px */
+@media screen and (max-width: 1200px) {
+    .LoginScreenHolder {
+        width: 50%;
+    }
+    
+    .LogoHolder {
+        margin-right: 30px;
+    }
+}
+
+/* For screens smaller than 992px */
+@media screen and (max-width: 992px) {
+    .LoginScreenHolder {
+        width: 60%;
+    }
+    
+    .Logo {
+        width: 150px;
+        height: 75px;
+    }
+    .PromptHolder{
+        display: none;
+    }
+    .Prompt {
+        font-size: 18px;
+    }
+}
+
+/* For screens smaller than 768px */
+@media screen and (max-width: 768px) {
+    .LoginScreenHolder {
+        width: 80%;
+        height: auto;
+        padding-bottom: 30px;
+    }
+    
+    .LogoHolder {
+        position: static;
+        margin-right: 0;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .InputStyle {
+        width: 60%;
+    }
+    
+    .PasswordOptionsHolder {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    
+    .ForgotPasswordText {
+        margin-left: 90px;
+    }
+    
+    .SigninBtn, .GoogleSigninBtn {
+        width: 80%;
+        margin-left: 10%;
+    }
+}
+
+/* For screens smaller than 576px */
+@media screen and (max-width: 576px) {
+    .LoginScreenHolder {
+        width: 95%;
+        border-radius: 20px;
+    }
+    
+    .Logo {
+        width: 120px;
+        height: 60px;
+    }
+    
+    .Prompt {
+        font-size: 16px;
+    }
+    
+    .WelcomeText {
+        font-size: 24px;
+    }
+    
+    .DetailsText {
+        font-size: 14px;
+    }
+    
+    .EmailText, .PasswordText {
+        margin-left: 20px;
+    }
+    
+    .InputStyle {
+        margin-left: 20px;
+        width: 85%;
+    }
+    
+    .RememberHolder {
+        margin-left: 20px;
+    }
+    
+    .ForgotPasswordText {
+        margin-left: 20px;
+    }
+    
+    .SigninBtn, .GoogleSigninBtn {
+        width: 85%;
+        margin-left: 7.5%;
+    }
+}
